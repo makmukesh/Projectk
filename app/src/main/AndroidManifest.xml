@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vpipl.kalpamrit">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:name="com.vpipl.kalpamrit.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:roundIcon="@drawable/app_icon"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.Splash_Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.vpipl.kalpamrit.Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Login_Checkout_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.DashBoard_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Register_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Register_User_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Register_OTP_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.WelcomeLetter_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Change_Password_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Profile_View_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Profile_Update_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.KYCUploadDocument_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Sponsor_genealogy_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Sponsor_team_details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Monthly_Incentive_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Monthly_Incentive_Detail_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Wallet_Transaction_Report_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Wallet_Request_Status_Report_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Wallet_Request_Amount_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Forget_Password_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Repurchase_BV_Details_Summary_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Repurchase_BV_Summary_Team_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Repurchase_BV_Detail"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.CloseActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.vpipl.kalpamrit.Home_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.ProductExpand_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.ProductListGrid_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.FeatureProductListGrid_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.FilterProductScreen_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.ProductDetail_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.AddCartCheckOut_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.CheckoutToPay_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.ChangeDeliveryAddress_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.AddDeliveryAddress_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.ThanksScreen_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.SearchProducts_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.vpipl.kalpamrit.service.GetDataService" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.MyOrders_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.MyOrdersDetails_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.Incentive_Statement_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.TDS_detail_report_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.Register_Complaint_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.ViewPendingQueries_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.ViewCompleteConversation_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.Payment_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.PaymentFailed_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.Repurchase_Bill_Summary"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.ProductWallet_Transaction_Report_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vpipl.kalpamrit.Wallet_Summary_Report_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Wallet_Bank_Transfer_Report_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.ID_card_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.MyAchivers_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.AddCartCheckOutOld_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Home_Slider_Web_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.TermsAndConditionsWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.ViewPdf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Sponsor_genealogy_Activity_New"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.GetContactDetails_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.NewSponsorGenealogyReport_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.NewSponsor_genealogy_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.DownloadSection_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.Change_Proposer_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vpipl.kalpamrit.ProposerGenealogyReport_Activity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".SMS.MySMSBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+</manifest>

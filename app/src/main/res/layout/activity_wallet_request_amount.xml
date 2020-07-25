@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarlayout"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="false">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                   <TextView android:fontFamily="@font/gisha_0"
+                        android:id="@+id/txt_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_gravity="center"
+                        android:background="@color/color_51be7b"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Request For Wallet Amount"
+                        android:textAllCaps="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@android:color/white"
+                        tools:ignore="Deprecated,HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="1"
+                                android:gravity="bottom"
+                                android:minHeight="52dp"
+                                android:visibility="visible">
+
+                                <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                    android:id="@+id/edtxt_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_edittext_bottom_line"
+                                    android:digits="0123456789."
+
+                                    android:hint="Requested Amount"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5"
+                                    android:maxLines="1"
+                                    android:minHeight="40dp"
+                                    android:singleLine="true"
+                                    android:textSize="13sp"
+                                    android:visibility="visible"
+                                    tools:ignore="Deprecated,HardcodedText" />
+                            </android.support.design.widget.TextInputLayout>
+
+                           <TextView android:fontFamily="@font/gisha_0"
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="₹"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_choose_bank"
+                                android:focusableInTouchMode="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_edittext_bottom_line"
+                                android:drawableEnd="@drawable/ic_dropdown_gray"
+                                android:drawableRight="@drawable/ic_dropdown_gray"
+                                android:editable="false"
+                                android:hint="Choose Bank"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:spinnerMode="dialog"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/edtxt_transaction_no"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_edittext_bottom_line"
+                                android:hint="Transaction No."
+                                android:inputType="textPersonName"
+                                android:maxLines="4"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:minHeight="52dp"
+                            android:visibility="visible">
+
+                            <android.support.design.widget.TextInputEditText android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_transaction_date"
+                                android:focusableInTouchMode="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_edittext_bottom_line"
+                                android:editable="false"
+
+                                android:hint="Transaction Date"
+                                android:inputType="none"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textSize="13sp"
+                                android:visibility="visible"
+                                tools:ignore="Deprecated,HardcodedText" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Reference Receipt"
+                            android:visibility="visible"
+                            tools:ignore="HardcodedText" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:minHeight="45dp"
+                            android:orientation="horizontal">
+
+                           <TextView android:fontFamily="@font/gisha_0"
+                                android:id="@+id/txt_reference_receipt"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edittext_bottom_line"
+                                android:gravity="center_vertical"
+                                android:maxLength="6"
+                                android:padding="5dp"
+                                android:singleLine="false"
+                                android:textColor="@color/color_text_grey"
+                                android:textSize="13sp"
+                                android:visibility="gone"
+                                tools:ignore="Deprecated" />
+
+                            <Button android:fontFamily="@font/gisha_0"
+                                android:id="@+id/btn_choose_file"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_round_rectangle_gray"
+                                android:text="Choose File"
+                                android:textAllCaps="false"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_selected_file"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_user_black"
+                            tools:ignore="ContentDescription" />
+
+                        <Button android:fontFamily="@font/gisha_0"
+                            android:id="@+id/btn_request"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_round_rectangle_orange_"
+                            android:focusableInTouchMode="false"
+                            android:text="Request For Wallet Balance"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+                        <Button android:fontFamily="@font/gisha_0"
+                            android:id="@+id/btn_reset"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_round_rectangle_green"
+                            android:focusableInTouchMode="false"
+                            android:text="Reset"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_home_">
+
+            <ExpandableListView
+                android:id="@+id/left_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="120dp"
+                android:childDivider="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:smoothScrollbar="true" />
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

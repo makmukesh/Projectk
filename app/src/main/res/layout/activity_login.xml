@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.vpipl.kalpamrit.Login_Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="Login"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="24sp"-->
+            <!---->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginBottom="10dp" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingEnd="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingStart="1dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_memberlogin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="46dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/gisha_0"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Member Log In"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        tools:ignore="Deprecated,HardcodedText" />
+
+                    <View
+                        android:id="@+id/view_memberlogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/color_orange_text"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/txt_login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="46dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/gisha_0"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Guest Login"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        tools:ignore="Deprecated,HardcodedText" />
+
+                    <View
+                        android:id="@+id/view_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layout_memberlogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edtxt_userid_member"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_edittext_bottom_line"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="Enter User ID"
+                                android:inputType="textPersonName"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="bottom"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/colorAccent"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edtxt_password_member"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_edittext_bottom_line"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="@string/password"
+                                android:imeActionId="@+id/login"
+                                android:imeActionLabel="@string/action_sign_in"
+                                android:imeOptions="actionUnspecified"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textSize="14sp"
+                                tools:ignore="Deprecated" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edtxt_userid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_edittext_bottom_line"
+                                android:digits="@string/alphanumeric"
+                                android:fontFamily="@font/gisha_0"
+                                android:hint="Enter Your Mobile or Email ID"
+                                android:inputType="textPersonName"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated,HardcodedText" />
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="bottom"
+
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/colorAccent"
+                            android:minHeight="52dp">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edtxt_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_edittext_bottom_line"
+                                android:fontFamily="@font/gisha_0"
+
+
+                                android:hint="@string/password"
+                                android:imeActionId="@+id/login"
+                                android:imeActionLabel="@string/action_sign_in"
+                                android:imeOptions="actionUnspecified"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:singleLine="true"
+                                android:textSize="13sp"
+                                tools:ignore="Deprecated" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </ViewFlipper>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <CheckBox android:fontFamily="@font/gisha_0"
+                    android:id="@+id/cb_login_rememberMe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/remember_me"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_text_grey" />
+
+               <TextView android:fontFamily="@font/gisha_0"
+                    android:id="@+id/txt_forgot_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical|end"
+                    android:text="@string/forgot_pswd"
+                    android:textColor="@color/app_color_green_one"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/ll_terms_and_condition"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:fontFamily="@font/gisha_0"
+                    android:text="I Agree With"
+                    android:textColor="@color/color_text_grey"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_terms_conditions"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text=" Terms &amp; Conditions"
+                    android:textColor="@color/color_orange_text"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+            <Button android:fontFamily="@font/gisha_0"
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round_rectangle_orange_"
+                android:focusableInTouchMode="false"
+                android:text="@string/action_sign_in"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/LLor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="#cccccc" />
+
+               <TextView android:fontFamily="@font/gisha_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="45dp"
+                    android:text="OR"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_color_green_one"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="40dp"
+
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="#cccccc" />
+
+            </LinearLayout>
+
+            <Button android:fontFamily="@font/gisha_0"
+                android:id="@+id/btn_new_registration"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_round_rectangle_green"
+                android:focusableInTouchMode="false"
+                android:text="Join Us"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

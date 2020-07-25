@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.vpipl.kalpamrit.Utils.CircularImageView
+
+        android:id="@+id/iv_Profile_Pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:src="@drawable/ic_icon_user"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/LL_Nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+       <TextView android:fontFamily="@font/gisha_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome,"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+       <TextView android:fontFamily="@font/gisha_0"
+            android:id="@+id/txt_welcome_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+
+
+            android:visibility="visible" />
+
+       <TextView android:fontFamily="@font/gisha_0"
+            android:id="@+id/txt_id_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+
+
+            />
+
+       <TextView android:fontFamily="@font/gisha_0"
+            android:id="@+id/txt_available_wb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

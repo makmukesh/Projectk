@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_rectangle_gray"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".4"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text="Order No."
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text=":"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_OrderNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".6"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".4"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text="Order Amt."
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text=":"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_OrderAmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".6"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_bv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".4"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text="Order BV."
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text=":"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_OrderBV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".6"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".4"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text="Order Date"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text=":"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_OrderDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".6"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text="Order Status"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:text=":"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_OrderStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.6"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_arrow"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

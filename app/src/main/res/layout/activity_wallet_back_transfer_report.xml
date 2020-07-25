@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarlayout"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true"
+                android:nestedScrollingEnabled="false">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                   <TextView android:fontFamily="@font/gisha_0"
+                        android:id="@+id/txt_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_gravity="center"
+                        android:background="@color/color_51be7b"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Wallet To Bank Transfer Detail"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@android:color/white"
+                        tools:ignore="Deprecated,HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight=".7"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+<!--
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="From Date"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_from_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_edittext_bottom_line"
+                            android:padding="5dp"
+                           android:visibility="gone"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="To Date"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_to_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/bg_edittext_bottom_line"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <Button android:fontFamily="@font/gisha_0"
+                            android:id="@+id/btn_proceed"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_round_rectangle_orange_"
+                            android:focusableInTouchMode="false"
+                            android:text="Proceed"
+                            android:textAllCaps="false"
+                            android:visibility="gone"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />-->
+
+                        <LinearLayout
+                            android:id="@+id/ll_showData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:gravity="center" >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Transfer Amount "
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:textSize="14dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:gravity="left"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="20dp"
+                                    android:id="@+id/txt_ttl_transfer_amt"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14dp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:gravity="center" >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Paid"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:textSize="14dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:gravity="left"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="20dp"
+                                    android:id="@+id/txt_paid_transfer_amt"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14dp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:gravity="center" >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Unpaid"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:textSize="14dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:gravity="left"
+                                    android:paddingLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/txt_unpaid_transfer_amt"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14dp"/>
+                            </LinearLayout>
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:scrollbars="none"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TableLayout
+                                        android:id="@+id/displayLinear"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="vertical"></TableLayout>
+
+                                    <!--<ListView-->
+                                    <!--android:id="@+id/lv"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="match_parent" />-->
+
+                                    <Button android:fontFamily="@font/gisha_0"
+                                        android:id="@+id/btn_load_more"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_below="@+id/displayLinear"
+                                        android:layout_marginBottom="20dp"
+                                        android:layout_marginTop="15dp"
+                                        android:background="@drawable/bg_round_rectangle_orange_"
+                                        android:focusableInTouchMode="false"
+                                        android:minWidth="120dp"
+                                        android:text="Load More"
+                                        android:textAllCaps="false"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="18sp"
+                                        tools:ignore="HardcodedText" />
+
+
+                                </RelativeLayout>
+
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_home_">
+
+            <ExpandableListView
+                android:id="@+id/left_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="120dp"
+                android:childDivider="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:smoothScrollbar="true" />
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
+

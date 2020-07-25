@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_round_rectangle_gray"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:outlineProvider="bounds"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+           <TextView android:fontFamily="@font/gisha_0"
+                android:id="@+id/txt_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".9"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                tools:ignore="Deprecated" />
+
+            <ImageView
+                android:id="@+id/imgView_editAddress"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_edit"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+       <TextView android:fontFamily="@font/gisha_0"
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4sp"
+            android:maxLines="3"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/app_color_black"
+            android:textSize="13sp" />
+
+       <TextView android:fontFamily="@font/gisha_0"
+            android:id="@+id/txt_mobNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone"
+            tools:ignore="Deprecated" />
+
+    </LinearLayout>
+
+</LinearLayout>

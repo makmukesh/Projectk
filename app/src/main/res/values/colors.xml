@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f3702a</color>
+    <color name="colorPrimaryDark">#487B40</color>
+    <color name="colorAccent">#5F5F9A</color>
+
+    <color name="app_color_green_one">#f3702a</color>
+
+    <color name="color_orange_text">#f3702a</color>
+    <color name="color_green_text">#487B40</color>
+
+    <color name="color_grey_dark_text">#646464</color>
+
+    <color name="background_color_text_grey">#dddddd</color>
+    <color name="color_text_grey">#626262</color>
+
+    <!--Color Related to Home-->
+    <color name="color_text_bonus_orange">#FF454545</color>
+
+    <color name="color_bg_product_images">#eeeeee</color>
+    <color name="color_border_product_images">#dddddd</color>
+
+    <color name="color_666666">#666666</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_51be7b">#3d8f5d</color>
+
+
+    <!--DashBoard Colors-->
+
+    <color name="app_color_white">#FFFFFF</color>
+    <color name="app_color_black">#000000</color>
+
+    <color name="app_color_gry">#EEEEEE</color>
+    <color name="app_color_red">#e70404</color>
+    <color name="app_color_cream_dark">#D6D6D6</color>
+    <color name="app_color_gray_dark">#666666</color>
+    <color name="app_color_grayicon">#666666</color>
+    <color name="color_topbar_bg_gridlist">#516451</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+
+    <color name="table_Heading_Columns">#ddd</color>
+    <color name="table_row_one">#f1f8fa</color>
+    <color name="table_row_two">#e1eff5</color>
+    <color name="text_color_hint">#FF424242</color>
+
+</resources>

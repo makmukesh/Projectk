@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:nestedScrollingEnabled="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+           <TextView android:fontFamily="@font/gisha_0"
+                android:id="@+id/txt_heading"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:background="@color/color_51be7b"
+                android:gravity="center"
+                android:singleLine="true"
+
+                android:text="Self Repurchase BV Details"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                tools:ignore="Deprecated,HardcodedText" />
+
+           <TextView android:fontFamily="@font/gisha_0"
+                android:id="@+id/txt_from_to"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_showData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+               <TextView android:fontFamily="@font/gisha_0"
+                    android:id="@+id/txt_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_green_text"
+                    android:visibility="visible" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableLayout
+                            android:id="@+id/displayLinear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:orientation="vertical"></TableLayout>
+
+                        <!--<ListView-->
+                        <!--android:id="@+id/lv"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent" />-->
+
+
+                        <Button android:fontFamily="@font/gisha_0"
+                            android:id="@+id/btn_load_more"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/displayLinear"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_round_rectangle_orange_"
+                            android:focusableInTouchMode="false"
+                            android:minWidth="120dp"
+                            android:text="Load More"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

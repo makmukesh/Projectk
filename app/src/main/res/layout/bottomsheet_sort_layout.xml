@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+   <TextView android:fontFamily="@font/gisha_0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="SORT BY"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/darker_gray"
+        tools:ignore="Deprecated,HardcodedText" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_color_cream_dark" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RadioButton android:fontFamily="@font/gisha_0"
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:button="@null"
+            android:buttonTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/abc_btn_radio_material"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/abc_btn_radio_material"
+            android:gravity="start|center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="New Arrivals"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#666666"
+            android:textSize="15sp"
+
+            tools:ignore="Deprecated,HardcodedText" />
+
+        <RadioButton android:fontFamily="@font/gisha_0"
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:button="@null"
+            android:buttonTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/abc_btn_radio_material"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/abc_btn_radio_material"
+            android:gravity="start|center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Price Low to High"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#666666"
+            android:textSize="15sp"
+
+            tools:ignore="Deprecated,HardcodedText" />
+
+        <RadioButton android:fontFamily="@font/gisha_0"
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:button="@null"
+            android:buttonTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/abc_btn_radio_material"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/abc_btn_radio_material"
+            android:gravity="start|center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Price High to Low"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#666666"
+            android:textSize="15sp"
+
+            tools:ignore="Deprecated,HardcodedText" />
+
+        <RadioButton android:fontFamily="@font/gisha_0"
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:button="@null"
+            android:buttonTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/abc_btn_radio_material"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/abc_btn_radio_material"
+            android:gravity="start|center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Discount"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#666666"
+            android:textSize="15sp"
+
+            tools:ignore="Deprecated,HardcodedText" />
+    </RadioGroup>
+
+</LinearLayout>

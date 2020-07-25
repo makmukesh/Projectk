@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:background="@color/color_51be7b"
+                    android:fontFamily="@font/gisha_0"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Register Query/Complaint"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white"
+                    tools:ignore="Deprecated" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!--<TextView-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:textColor="@color/color_text_grey"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:visibility="visible" />-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:minHeight="52dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtxt_IDNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_edittext_bottom_line"
+                            android:editable="false"
+                            android:inputType="none"
+                            android:fontFamily="@font/gisha_0"
+                            android:hint="ID Number"
+                            android:maxLines="1"
+                            android:minHeight="40dp"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:minHeight="52dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtxt_memberName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_edittext_bottom_line"
+                            android:editable="false"
+                            android:fontFamily="@font/gisha_0"
+                            android:hint="Name"
+
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:minHeight="40dp"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="bottom"
+                        android:minHeight="52dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtxt_mobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_edittext_bottom_line"
+                            android:digits="@string/numberic"
+                            android:fontFamily="@font/gisha_0"
+                            android:hint="@string/mobile"
+                            android:maxLength="10"
+                            android:editable="false"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:minHeight="40dp"
+                            android:singleLine="true"
+                            android:spinnerMode="dialog"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="bottom"
+                        android:minHeight="52dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtxt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_edittext_bottom_line"
+                            android:fontFamily="@font/gisha_0"
+                            android:hint="@string/txt_email"
+                            android:maxLines="1"
+                            android:minHeight="40dp"
+                            android:singleLine="true"
+                            android:spinnerMode="dialog"
+                            android:editable="false"
+                            android:inputType="none"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="bottom"
+                        android:minHeight="52dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/txt_department"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_edittext_bottom_line"
+                            android:drawableRight="@drawable/ic_dropdown_gray"
+                            android:editable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/gisha_0"
+                            android:hint="Department"
+                            android:inputType="none"
+                            android:minHeight="40dp"
+                            android:singleLine="true"
+                            android:spinnerMode="dialog"
+                            android:textAllCaps="true"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="bottom"
+                        android:minHeight="52dp"
+                        android:visibility="visible">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edtxt_Query"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_edittext_bottom_line"
+                            android:fontFamily="@font/gisha_0"
+
+                            android:hint="Query/Concern"
+
+                            android:maxLines="1"
+                            android:minHeight="40dp"
+                            android:singleLine="true"
+                            android:textSize="13sp"
+                            android:visibility="visible"
+                            tools:ignore="Deprecated" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Query Attachment"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:minHeight="45dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_reference_receipt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edittext_bottom_line"
+                            android:gravity="center_vertical"
+                            android:maxLength="6"
+                            android:padding="5dp"
+                            android:singleLine="false"
+                            android:textColor="@color/color_text_grey"
+                            android:textSize="13sp"
+                            android:visibility="gone"
+                            tools:ignore="Deprecated" />
+
+                        <Button
+                            android:id="@+id/btn_choose_file"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/hot_product_bg_round_rectangle"
+                            android:text="Choose File"
+                            android:textAllCaps="false"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_selected_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_user_black"
+                        tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                    <Button android:fontFamily="@font/gisha_0"
+                        android:id="@+id/btn_reset"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/bg_round_rectangle_green"
+                        android:focusableInTouchMode="false"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                    <Button
+                        android:id="@+id/btn_Submit"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/bg_round_rectangle_orange_"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/gisha_0"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+            </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

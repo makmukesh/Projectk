@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckBox android:fontFamily="@font/gisha_0"
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:button="@null"
+        android:buttonTint="@color/colorPrimary"
+        android:drawableEnd="@drawable/abc_btn_check_material"
+        android:drawablePadding="20dp"
+        android:drawableRight="@drawable/abc_btn_check_material"
+        android:gravity="start|center_vertical"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="New Arrivals"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        tools:ignore="Deprecated,HardcodedText" />
+
+</LinearLayout>

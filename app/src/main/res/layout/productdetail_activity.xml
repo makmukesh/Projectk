@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="#dddddd"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <android.support.v4.view.ViewPager
+                                    android:id="@+id/image_viewPager"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="280dp"
+                                    android:background="@color/color_bg_product_images"
+                                    android:clipToPadding="false"
+                                    android:outlineProvider="bounds" />
+
+                                <com.vpipl.kalpamrit.Utils.CirclePageIndicator
+                                    android:id="@+id/imagePageIndicator"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@android:color/white"
+                                    android:padding="5dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txt_productDiscount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|right"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_round_rectangle_orange_"
+                                android:fontFamily="@font/gisha_0"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                tools:ignore="Deprecated" />
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/txt_productName"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/gisha_0"
+                                android:maxLines="2"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/color_orange_text"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txt_productDetail"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/gisha_0"
+                                android:lineSpacingExtra="4sp"
+                                android:maxLines="2"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_productBV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/gisha_0"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                tools:ignore="Deprecated" />
+
+                            <TextView
+                                android:id="@+id/txt_productAmount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/gisha_0"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="14sp"
+                                tools:ignore="Deprecated" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#dddddd"
+                        android:baselineAligned="false"
+                        android:minHeight="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_specification"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gisha_0"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="13dp"
+                            android:singleLine="true"
+                            android:text="Description"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/app_color_black"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/txt_view_stock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/gisha_0"
+                            android:gravity="center_vertical"
+                            android:paddingStart="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:singleLine="true"
+                            android:text="In Stock"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@android:color/holo_green_dark"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp">
+
+                            <WebView
+                                android:id="@+id/webView_specification"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="45dp"
+                                android:scrollbarSize="1dp"
+                                android:scrollbarStyle="outsideOverlay"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_simila_products"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/color_eeeeee" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gisha_0"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Similar Products"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18sp"
+                                android:textStyle="normal|bold" />
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="20dp"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:id="@+id/LLBottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/white"
+                                android:orientation="horizontal"
+                                android:paddingStart="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingRight="5dp" />
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_addToCart"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@color/color_green_text"
+                android:fontFamily="@font/gisha_0"
+                android:text="Add To Cart"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_buyNow"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@color/color_orange_text"
+                android:fontFamily="@font/gisha_0"
+                android:text="Buy Now"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

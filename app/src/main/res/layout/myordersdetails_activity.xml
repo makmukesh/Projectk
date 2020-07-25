@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/bg_round_rectangle_gray"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".4"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="Order No."
+                            android:textColor="@android:color/black"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".1"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text=":"
+                            android:textColor="@android:color/black"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_orderNo"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            tools:ignore="Deprecated" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".4"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="Order Date"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".1"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text=":"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_orderDate"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".4"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="Order Status"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".1"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text=":"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_orderStatus"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".4"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="Order Amount"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".1"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text=":"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_orderAmount"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_bv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".4"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="Order BV."
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".1"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text=":"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated,HardcodedText" />
+
+                       <TextView android:fontFamily="@font/gisha_0"
+                            android:id="@+id/txt_OrderBV"
+
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/app_color_black"
+                            android:textSize="13sp"
+                            tools:ignore="Deprecated" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:divider="@null"
+                android:padding="5dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+           <TextView android:fontFamily="@font/gisha_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="No Orders Found."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
